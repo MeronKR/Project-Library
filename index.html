@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    
     <div class="wrapper">
 
         <header class="header">
@@ -20,27 +19,55 @@
                 
             
                 </span>
-            <span class="material-symbols-outlined add">
+            <button class="material-symbols-outlined addBtn">
                 add_circle
-                </span>
+            </button>
         </header>
 
         <div class="main">
 
             <div class="mainContent">
-                <h4>Your Library is Empty</h4>
-                <div class="cta">
-                    <p>Click</p>
-                    <span class="material-symbols-outlined add">
-                        add_circle
-                        </span>
-                    <p>to Add Your Books</p>
+                <div class="callToAction">
+                    <h4 class="mainHeader">Your Library is Empty</h4>
+                    <div class="cta">
+                        <p>CLICK</p>
+                        <button class="material-symbols-outlined addBtn">
+                            add_circle
+                        </button>
+                        <p>TO ADD BOOKS</p>
+                    </div>
+                    <hr>
+                    <p>------ OR ------</p>
+                    <hr>
+                    <p>USE OUR CATALOGUE</p>
+                    <button>Browse Catalogue</button>
                 </div>
-                <hr>
-                <p>-- --</p>
-                <hr>
-                <p>Use Our Catalogue</p>
-                <button>Browse Catalogue</button>
+
+                <form action="" id="form">
+                    <div class="formContainer">
+                        <div class="titleDiv">
+                            <label for="title">Title</label>
+                            <input type="text" class="title">
+                        </div>
+                        <div class="authorDiv">
+                            <label for="author">Author</label>
+                            <input type="text" class="author">
+                        </div>
+                        <div class="pageDiv">
+                            <label for="pages">Page</label>
+                            <input type="number" class="pages">
+                        </div>
+                        <fieldset>
+                            <legend>Have you read this book?</legend>
+                            <div class="readDiv">
+                                <label for="read">Yes</label>
+                                <input type="radio" name="readSelect" class="read">
+                                <label for="unread">No</label>
+                                <input type="radio" name="readSelect" class="unread">
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -48,7 +75,6 @@
             <p>Copyright &copy; MeronKR</p>
         </footer>
     </div>
-
     <script src="apps.js"></script>
 </body>
 </html>
