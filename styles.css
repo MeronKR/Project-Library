@@ -113,15 +113,70 @@ button.addBtn{
 	cursor: pointer;
 }
 
+#form{
+    display: none;
+}
 
+.formContainer{
+    display:grid;
+    grid-template: 1fr 1fr 1fr 1fr 0.5fr/ 1fr 3fr;
+    gap: 1px;
+    padding:0;
+    margin:0;
+}
 
+.titleDiv{
+    display:grid;
+    grid-template: 1fr/ 1fr 4fr;
+    grid-area:1/1/2/3
+}
+
+.authorDiv{
+    display:grid;
+    grid-template: 1fr/ 1fr 4fr;
+    grid-area: 2/1/3/3
+}
+
+.pageDiv{
+    display:grid;
+    grid-template: 1fr/ 1fr 4fr;
+    grid-area: 3/1/4/3;
+}
+
+fieldset{
+    grid-area:4/1/5/3
+}
+
+.formContainer div{
+    margin: 0px;
+}
+
+.formContainer label,
+.formContainer legend{
+    align-self: center;
+    font-size: 18px;
+    margin:0;
+}
+
+.formContainer input{
+    align-self: center;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.button{
+    grid-area: 5/1/6/3;
+}
+
+.button button{
+    margin-top: 10px;
+}
 footer p{
     margin: 0;
     padding:0;
     text-align: center;
     font-size: 12px;
 }
-#form{
-    display: none;
-    
-}
+
