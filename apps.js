@@ -28,6 +28,7 @@ add.forEach((item)=> {
 })
 
 
+
 //Layout Change Functions
 let cta = document.querySelector(".callToAction")
 
@@ -51,3 +52,13 @@ function deleteChildren(){
   } 
   form.style.display = "block";
 }
+
+//FORM Validation
+
+const bookForm = document.getElementById("form")
+const title = document.getElementsByClassName("title")
+const author = document.getElementsByClassName("author")
+const pages = document.getElementsByClassName("pages")
+
+
+
